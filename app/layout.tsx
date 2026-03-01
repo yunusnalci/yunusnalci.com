@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -77,6 +78,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         {children}
         <GoogleAnalytics gaId="G-BQGKXTSLZX" />
+        <Analytics />
       </body>
     </html>
   );
