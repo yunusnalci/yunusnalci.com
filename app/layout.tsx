@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const interTight = Inter_Tight({
 
 const siteName = "YUNUS NALCI";
 const siteUrl = "https://yunusnalci.com";
-const title = "YUNUS NALCI — BRAND & PRODUCT DESIGNER";
+const title = "Yunus Nalci — Brand & Product Designer";
 const description =
   "Designing brand and product experiences from strategy to execution.";
 
@@ -61,10 +62,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.png", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
     apple: [{ url: "/apple-icon.png" }],
   },
 };
@@ -76,7 +74,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={interTight.variable}>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <GoogleAnalytics gaId="G-BQGKXTSLZX" />
+      </body>
     </html>
   );
 }
