@@ -13,7 +13,7 @@ const siteName = "YUNUS NALCI";
 const siteUrl = "https://yunusnalci.com";
 const title = "Yunus Nalci — Brand & Product Designer";
 const description =
-  "Designing brand and product experiences from strategy to execution.";
+  "Brand and product designer focused on building scalable digital experiences, high-performing brands, and strategic design systems from concept to execution.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
