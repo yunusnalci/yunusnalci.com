@@ -478,33 +478,35 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="mt-14">
-        <div className="mx-auto max-w-[1120px] px-6">
-          <div className="h-px w-full bg-white/10" />
+     <footer className="mt-14">
+  <div className="mx-auto max-w-[1120px] px-6">
+    <div className="h-px w-full bg-white/10" />
 
-          <div className="py-5 text-xs">
-            <div className="flex items-center gap-3 text-white/50 tracking-wide">
-              <span>© 2026 YUNUS NALCI</span>
+    <div className="py-5 text-xs">
+      <div className="flex flex-col items-center gap-2 text-center text-white/50 tracking-wide sm:flex-row sm:items-center sm:justify-start sm:gap-3 sm:text-left">
+        
+        <span>© 2026 YUNUS NALCI</span>
 
-              <span className="text-white/25">—</span>
+        <span className="hidden sm:inline text-white/25">—</span>
 
-              <a
-                href="mailto:hello@yunusnalci.com"
-                className="group inline-flex items-center gap-1 transition-colors hover:text-white/70"
-              >
-                <span>AVAILABLE FOR SELECTED PROJECTS</span>
+        <a
+          href="mailto:hello@yunusnalci.com"
+          className="group inline-flex items-center gap-1 transition-colors hover:text-white/70"
+        >
+          <span>AVAILABLE FOR SELECTED PROJECTS</span>
 
-                <img
-                  src="/assets/arrow-up-right.svg"
-                  alt=""
-                  className="h-[1.50em] w-[1.50em] opacity-60 transition-opacity group-hover:opacity-100"
-                  draggable={false}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+          <img
+            src="/assets/arrow-up-right.svg"
+            alt=""
+            className="h-[1.50em] w-[1.50em] opacity-60 transition-opacity group-hover:opacity-100"
+            draggable={false}
+          />
+        </a>
+
+      </div>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
